@@ -151,7 +151,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (url.pathname.startsWith("/")) {
-    const file = path.join(__dirname, "public", url.pathname.slice(1));
+    const file = path.join(__dirname, url.pathname.slice(1));
     if (fs.existsSync(file) && fs.statSync(file).isFile()) {
       const ext = path.extname(file);
       const types = {".js":"text/javascript", ".css":"text/css", ".png":"image/png", ".svg":"image/svg+xml"};
