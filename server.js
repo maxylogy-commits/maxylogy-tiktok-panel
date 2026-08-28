@@ -139,7 +139,7 @@ const server = http.createServer(async (req, res) => {
       creator: s.creator || null
     });
   }
-  const file = path.join(__dirname, url.pathname.slice(1));
+   const file = path.join(__dirname, url.pathname.slice(1));
   if (url.pathname === "/api/post") {
     if (!s.accessToken) return json(res, 401, {error: "TikTok account is not connected"});
     // The actual Direct Post request is intentionally left as the next integration step.
