@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Maxylogy — TikTok Studio</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <div class="eyebrow">MAXYLOGY STUDIO</div>
+        <h1>Контент для TikTok</h1>
+        <p>Идея → сценарий → ролик → публикация.</p>
+      </div>
+      <button id="connect" class="primary">Подключить TikTok</button>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <span>01</span><h2>Идея</h2>
+        <textarea id="idea" placeholder="Например: мем про будильник утром"></textarea>
+        <button id="make" class="secondary">Создать сценарий</button>
+      </article>
+
+      <article class="card">
+        <span>02</span><h2>Сценарий</h2>
+        <div id="script" class="output">Здесь появится короткий сценарий.</div>
+      </article>
+
+      <article class="card">
+        <span>03</span><h2>Публикация</h2>
+        <div id="status" class="output">TikTok не подключён.</div>
+        <button id="post" class="primary" disabled>Опубликовать</button>
+      </article>
+    </section>
+
+    <footer>
+      <strong>Следующий этап:</strong> подключим генерацию ролика и реальный Direct Post после настройки домена и App Review.
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
